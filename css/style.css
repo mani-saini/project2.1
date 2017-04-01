@@ -1,0 +1,192 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    background: white;
+}
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.container {
+    background: #fff;
+}
+
+.col {
+    background: white;
+    
+}
+
+.port { 
+    margin-top:  300px;
+    
+}
+
+img {
+    
+    max-width: 100%;
+    padding: auto;
+/*    margin-top: 80px ;*/
+}
+
+h1 {
+    
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 30px;
+        
+}
+
+.page {
+    margin-top: 20px;
+}
+/****************link style*********************/
+
+a {
+    text-decoration: none;
+    
+}
+
+
+
+
+/*******************   Navigation       ***********************/
+
+
+
+.name-nav {
+	font-size: 1.25em;
+	margin-bottom: 200px;
+}
+
+.
+
+	.main-nav a:hover {
+		color: 
+
+}
+
+
+ .main-nav {
+        
+        float: right;
+    }
+    
+    .main-nav li{
+        
+        display: inline-block;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    
+.port {
+    
+    margin-bottom: 100px;
+    
+}
+
+/*****************   style    ************************/
+
+
+h2 {
+    
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+p {
+    
+    text-align: center;
+}
+/*************************  footer   ***************************/
+
+footer {
+    
+    font-size: 1.2em;
+    text-align: center;
+    clear: both;
+    padding: 50px;
+    
+}
+
+
+    /**********************   float clearfix  **********************/
+
+
+/*
+.clearfix :: after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+    
+*/
+
+
+
+
+/*==========================Media  Quries ======================= ===============================================================*/
+
+
+@media (min-width: 769px) {
+    
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+     }
+    
+    
+    .col {
+        width: 50%;
+        float: left;
+    }
+    
+       
+
+   
+    
+    .col {
+        
+        padding-left: 1em;
+        padding-right: 1em;
+            
+    }
+    
+    
+    
+}
+
+
+
+@media (min-width: 1025px) {
+  
+    .container {
+        width: 85%;
+        max-width: 1150px;
+   }
+    
+    
+    .col {
+        width: 33.33%;
+        
+    }
+}
+
+
+
