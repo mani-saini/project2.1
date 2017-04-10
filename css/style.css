@@ -7,11 +7,28 @@
 body {
     
     line-height: 1.4em;
+    margin-top: 0;
     
 }
+
+
+
+
+h2,h3,h4, a {
+   
+font-family: 'Philosopher', sans-serif; 
+    
+}
+
+p {
+    
+font-family: 'Amiri', serif;
+
+}
+
 .container {
     
-    width: 70%;
+    width: 79%;
     margin: 0 auto;
 }
 
@@ -39,13 +56,26 @@ h1 {
     
     text-align: left;
     padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background-color:  #3acec2;
-    margin-bottom: 30px;
-        
-    
+    padding-bottom: .8em;
+    background-color:  #006091;
+    margin-bottom: 20px;
+    margin: 0 2em;
 }
 
+/*
+.main-header {
+    
+    margin: 0 0;
+}
+*/
+
+.introduction {
+    margin: 0 2em;
+}
+
+body {
+    background-color: #006091;
+}
 .main-nav {
     margin-top: 5px;
     
@@ -105,6 +135,7 @@ ul {
     text-align: center;
     display: block;
     padding: 10px 15px;
+    text-align: center;
 }
 
 
@@ -122,6 +153,7 @@ ul {
 p {
     text-align: center;
     margin: 0;
+    
 }
 
 .border {
@@ -130,8 +162,26 @@ p {
 
 .title {
     
-    padding-bottom: 10em;
-    margin-bottom: 100px;
+    margin-top: 2em;
+}
+
+a {
+    color: black;
+}
+.introduction {
+    
+    margin-top: 2.5em;
+}
+
+
+a:hover{
+    
+    color: red;
+}
+
+.container {
+    
+    background-color: #fff;
 }
 
 /*************************  footer   ***********************/
@@ -142,7 +192,16 @@ footer {
     text-align: center;
     clear: both;
     padding: 50px;
+
+}
+
+.footone {
+    margin: 2em;
+}
+
+.border {
     
+    margin-top: 4.5em;
 }
 
 /* clear fix*/
@@ -171,14 +230,15 @@ footer {
     float: left;
 }
 
-    .header-img{
-    max-width: 25%;
-    float: right;
-    padding: 0;
-    margin: 30px 100px 0 0;
+    .paragraph {
         
+        padding-bottom: 3em;
     }
+        
+        
     
+    
+
     
     .header-image {
         float: right;
@@ -191,7 +251,7 @@ footer {
         max-width: 45%;
         float: left;
         text-align: left;
-        font-size: 1.2em;
+        font-size: 1.6em;
         padding: 30px;
     }
     
@@ -201,7 +261,7 @@ footer {
 }
     
  .main-nav {
-     margin-bottom: 100px;
+     margin-bottom: 2.5em;
     }
  
 .main-nav {
@@ -253,7 +313,12 @@ footer {
  .main-nav li {
    display: inline-block;  /*  float: left;*/
    margin: 15px;     
-}    
+} 
+    
+a {
+    
+    padding: 1.5em;
+}
 }
 
 
@@ -263,7 +328,7 @@ footer {
 
 @media (min-width: 1025px) {
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1150px;
         
 }
