@@ -1,3 +1,4 @@
+/*==========  Base layout style       ===========*/
 
 * {
     
@@ -8,91 +9,100 @@ body {
     
     line-height: 1.4em;
     margin-top: 0;
-    
+	text-align: center;
+/*	background-color: #fafafa;*/
+/*	color: #4a4a4a;*/
+}
+
+h2 {
+    margin-top: 0; /*The stop the heading collasing */
+}
+
+h2,h3,h4, a { 
+	font-family: 'Philosopher', sans-serif;     
 }
 
 
-
-
-h2,h3,h4, a {
-   
-font-family: 'Philosopher', sans-serif; 
-    
-}
 
 p {
-    
-font-family: 'Amiri', serif;
+ 	font-family: 'Amiri', serif;
+}
 
+.background2 {
+	width: 100%;
+	margin: 0 auto;
 }
 
 .container {
     
-    width: 79%;
-    margin: 0 auto;
-}
-
-
-img{
     width: 100%;
+    margin: 0 auto;
+	padding-left: 6em;
+	
 }
+
+/*
+.background h2 {
+	padding-top: 30px;   added 
+}
+*/
+
+
+.background2 {
+	padding: 0 5em;
+	
+}
+
 
 h1 {
     padding-left:  1em;
 }
 
 
+.main-header{
+	background-color: lightgray;
+}
 
-/*==========  Base layout style       ===========*/
+.page-image1{
+	display: block;
+/*	max-width: 96%;*/
+	padding: 0;
+	margin: 1em auto;   /* profile image     */
+/*	float: right;*/
+/*	padding-right: 2em;*/
+	
+	
+}
 
-.name a,
-.main nav a {
-    padding: 10px 15px;
-    display: block;
+.page-image{
+	display: inline-block; /* inline-block mobile important*/
+	max-width: 80%;
+	min-width: 30%;
+	padding: 0 auto;
+	margin-left: 0.5em;
+	padding-top: 1em;
 }
 
 
-.main-header {
-    
-    text-align: left;
-    padding-top: 1.5em;
-    padding-bottom: .8em;
-    background-color:  #006091;
-    margin-bottom: 20px;
-    margin: 0 2em;
+
+.paragraph {
+	max-width: 100%;
+	padding: 0.9em ;
+	margin: 0 2.5em;
 }
 
-/*
-.main-header {
-    
-    margin: 0 0;
-}
-*/
-
-.introduction {
-    margin: 0 2em;
-}
-
-body {
-    background-color: #006091;
-}
-.main-nav {
-    margin-top: 5px;
-    
-}
-
-h2 {
-    text-align: center;
-}
-
-.col {
-    margin-top: 1em;
+.infor {
+	max-width: 100%;
+/*	float: left;*/
+	font-size: 1.1em;
+	margin: 0 8px;
+	
+	
 }
 /****************link style*********************/
 
 a {
     text-decoration: none;
-    
 }
 
 
@@ -108,103 +118,105 @@ ul {
 /*******************   Navigation       ***********************/
 
 
-.name {
-    
-    margin: 0;
-}
-
-    
-.main-nav {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.main-nav {
-    
-    margin-top: 5px;
-}
-
-.main-nav {
-    text-align: center;
-    
-}
-
-.title {
-    
-    text-align: center;
-    display: block;
-    padding: 10px 15px;
-    text-align: center;
+nav, ul, li, a{
+	padding: 5px;
 }
 
 
 /*****************   style    ************************/
 
-.headline {
-    margin-bottom: 0;
+.contact-infor{
+	background-color: lightgray;
+	padding-top: 1em;
 }
 
-.col {
-    margin-top: 50px;
-    
+
+.footer2{
+	background-color: lightgray;
+	padding-top: 2em;
 }
 
-p {
-    text-align: center;
-    margin: 0;
-    
+.border{
+	background-color: lightgray; 
+	border: solid 1px gray;
 }
 
-.border {
-    border: 1px solid grey;
+.col{
+	background-color:pink;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+	
 }
+
+
+
+.background2{
+	background-color: green;
+	padding-left: 0 2em;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 30px;
+}
+
+
+
+
+.container{
+	padding: 0 2%;
+	margin: 0;
+	background-color: red;
+}
+
+
+
+
+/*
+.port{
+	padding: 0 5px;
+}
+*/
 
 .title {
-    
-    margin-top: 2em;
-}
+		padding: 20px 5px;
+	}
 
-a {
-    color: black;
-}
-.introduction {
-    
-    margin-top: 2.5em;
-}
-
-
-a:hover{
-    
-    color: red;
-}
-
-.container {
-    
-    background-color: #fff;
-}
-
+	
 /*************************  footer   ***********************/
+/*mobile screen*/
 
-footer {
-    
-    font-size: 1.2em;
-    text-align: center;
-    clear: both;
-    padding: 50px;
-
+.main-footer {
+	display: none;
 }
 
-.footone {
-    margin: 2em;
+.contact-infor{
+	display: inline-block;
 }
 
-.border {
-    
-    margin-top: 4.5em;
+.name-footer,
+.backtotop-footer{
+	font-size: 1em;
+	vertical-align: text-top;
+		
 }
 
-/* clear fix*/
+.name-footer{
+	float: left;
+	padding-left: 10px;
+}
+
+.backtotop-footer{
+	float: right;
+	padding-right: 10px;
+}
+
+.contact-infor{
+	width: 100%;
+}
+
+/********************** clear fix*********************/
 .clearfix::after {
     content: "";
     display: table;
@@ -216,136 +228,243 @@ footer {
 
 
 
-/*==========================Media  Quries ======================= ===============================================================*/
+/*==========================Media  Quries ==================================== =============================================================================================================================================================*/
 
 
 @media (min-width: 768px) {
     
- .container {      /* .container      */
-    max-width: 90%;
+ .container {           
+    max-width: 100%;
     margin: 0 auto;
 }
- .name,   
- .col {
-    float: left;
+
+.page-image1{
+	display: block;
+	max-width: 100%;
+	padding: 0;
+	margin: 1em auto;   /* profile image     */
+	float: right;
+	padding-right: 2em;
+	
 }
 
-    .paragraph {
-        
-        padding-bottom: 3em;
-    }
-        
-        
-    
-    
-
-    
-    .header-image {
-        float: right;
-        max-width: 30%;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .infor    {
-        max-width: 45%;
-        float: left;
-        text-align: left;
-        font-size: 1.6em;
-        padding: 30px;
-    }
-    
-.col {  
-    width: 50%;
-    
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
-    
- .main-nav {
-     margin-bottom: 2.5em;
-    }
+	
+.page-image {
+	max-width: 90%;
+	padding-top: 8px;
+	padding-bottom: 0.2em;
+	vertical-align: bottom;
+	margin: 2.5px;
+	
+}
+	
+.col{
+	background-color:yellow;
+	width: 50%;
+	padding: 0 1px;
+	
+	}
  
-.main-nav {
-    text-align: right;    
-    }
-    
-    
- .col {
-     display: inline-block;
-     margin-right: -4px;
-     vertical-align: top;
-     padding-left: 1em;
-     padding-right: 1em;
+.col{
+	max-width: 75%;
+	float: left;
 }
-    
-    
-/*layout container*/
+	
+	
+.infor {
+	max-width: 47%;
+	float: left;
+	font-size: 1.2em;
+	text-align: left;
+	padding-left: 0.5em;
+}
+	
+	
+h3{
+	display: block;
+	padding: 0;
+	padding: 0;
+	
+}	
+	
+         /*       delete later if not required*/
+.paragraph {
+	display: inline-block;
+	max-width: 75%;				
+	padding-bottom: 2.5em;
+	
+	
 
-.container {
-    padding-left: 1em;
-    padding-right: 1em;
-    
 }
-  
-.name,
-.main-nav,
-.main-nav li {
-    
-    display: inline-block;
-    
-}
-    
-.main-nav li {
-    margin-right: 8px;
-        
-}
-    
+	
+	
+
 .name {
-   float: left; 
-    width: 240px;
+	padding-top: 2em;
+	
 }
 
+/*******************   Navigation       ***********************/
+	
 .main-nav {
-    
-    float: right;
+	width: 100%;
+	text-align: center;
 }
-    
-    
- .main-nav li {
-   display: inline-block;  /*  float: left;*/
-   margin: 15px;     
-} 
-    
-a {
-    
-    padding: 1.5em;
+/*
+	
+.main-nav, li {
+	display: inline-block;
+	margin-right: 30px;
+	float: right;
+	padding-top: 2px;
+	text-align: center;
 }
-}
+*/
 
+/************************	footer nav   **********************************/
+	
+.main-footer{
+	display: block;
+	float: right;
+}	
 
-
-
-
-
+.backtotop-footer{
+	display: none;
+		
+	}
+	
+	
+	
+	
+	
+/*==========================Media  Quries ==================================== =============================================================================================================================================================*/	
+	
+	
+	
 @media (min-width: 1025px) {
 .container {
-    width: 85%;
-    max-width: 1150px;
+    width: 100%;
+   
         
 }
 
+
+.page-image1{
+	display: inline;
+	max-width: 100%;
+	padding: 0;
+	margin: 1em auto;   /* profile image     */
+	float: right;
+	padding-right: 2em;
+	
+}
+
+	
+.page-image {
+	max-width: 90%;
+	padding-top: 2.5em;
+	padding-bottom: 0.2em;
+	vertical-align: bottom;
+	margin: 2.5px;
+	padding-top: 2em;
+	
+}
+	
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}		
+.col{
+	background-color:yellow;
+	width: 30.33%;
+	padding: 0 ;
+	padding: 0 -5px;
+	margin: 0 1px;
+	}
+ 
+.col{
+	max-width: 75%;
+	float: left;
+}
+	
+	
+.infor {
+	max-width: 47%;
+	float: left;
+	font-size: 1.2em;
+	text-align: left;
+	padding-left: 0.5em;
+}
+	
+	
+h3{
+	display: block;
+	padding: 0;
+	padding: 0;
+	
+}	
+	
+         /*       delete later if not required*/
+.paragraph {
+	display: inline-block;
+	max-width: 80%;
+	padding: 0;
+	margin: 0;
+	
+}
+	
+	
+
+.name {
+	padding-top: 2em;
+	
+}
+
+	
+	
+
+	
+	
+	
+.container {
+	padding-bottom: 2.5em
+
+	}
+	
+	
+}  /*Do not delete this */
+	
+/*
+nav, ul, li, a{
+	padding: 10px;
+	text-align: center;
+}
 .col    {
-    width: 33%;
+    width: 30%;
 }
-}
-        
 
+	
+div .container .clearfix
+	{
+	margin: 0;
+/*	margin-right: 0;*/
+	
+	
 
-
-
-
-
-
-
-
-
-
+	
+	
+/*
+div .container {
+	width: 100%;
+	margin: 0 2em;
+	margin-right: 2em;
+	padding: 0 5em;
+	}		
+*/
+*/
