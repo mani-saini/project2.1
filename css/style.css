@@ -1,5 +1,11 @@
-/*==========  Base layout style       ===========*/
+      
 
+
+/*=======================================================
+	
+				BASE LAYOUT STYLE
+	
+========================================================*/
 * {
     
     box-sizing: border-box;
@@ -10,8 +16,6 @@ body {
     line-height: 1.4em;
     margin-top: 0;
 	text-align: center;
-/*	background-color: #fafafa;*/
-/*	color: #4a4a4a;*/
 }
 
 h2 {
@@ -21,8 +25,6 @@ h2 {
 h2,h3,h4, a { 
 	font-family: 'Philosopher', sans-serif;     
 }
-
-
 
 p {
  	font-family: 'Amiri', serif;
@@ -38,19 +40,11 @@ p {
     width: 100%;
     margin: 0 auto;
 	padding-left: 6em;
-	
 }
-
-/*
-.background h2 {
-	padding-top: 30px;   added 
-}
-*/
 
 
 .background2 {
 	padding: 0 5em;
-	
 }
 
 
@@ -65,13 +59,9 @@ h1 {
 
 .page-image1{
 	display: block;
-/*	max-width: 96%;*/
+	max-width: 80%;
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
-/*	float: right;*/
-/*	padding-right: 2em;*/
-	
-	
 }
 
 .page-image{
@@ -82,9 +72,6 @@ h1 {
 	margin-left: 0.5em;
 	padding-top: 1em;
 }
-
-
-
 .paragraph {
 	max-width: 100%;
 	padding: 0.9em ;
@@ -99,31 +86,48 @@ h1 {
 	
 	
 }
-/****************link style*********************/
+
+/*=======================================================
+	
+				LINK NONE STYLE
+	
+========================================================*/
 
 a {
     text-decoration: none;
 }
 
-
 ul {
     list-style:  none;
 }
 
+/*=======================================================
+	
+					NAVIGATION
+	
+========================================================*/
 
-
-
-
-
-/*******************   Navigation       ***********************/
-
-
-nav, ul, li, a{
-	padding: 5px;
+nav ul li a {
+	display: block;
+	weight: bold;
+	padding-top: 7px;
 }
 
+nav ul li a:hover {
+	color: red ;
+}
 
-/*****************   style    ************************/
+li a:hover {
+    background-color: lightblue;
+}	
+
+
+/*=======================================================
+	
+					STYLE
+	
+========================================================*/
+
 
 .contact-infor{
 	background-color: lightgray;
@@ -142,15 +146,11 @@ nav, ul, li, a{
 }
 
 .col{
-	background-color:pink;
+	background-color:yellow;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	
-	
 }
-
-
 
 .background2{
 	background-color: green;
@@ -161,31 +161,23 @@ nav, ul, li, a{
 	padding-bottom: 30px;
 }
 
-
-
-
 .container{
 	padding: 0 2%;
 	margin: 0;
 	background-color: red;
 }
 
-
-
-
-/*
-.port{
-	padding: 0 5px;
-}
-*/
-
 .title {
 		padding: 20px 5px;
 	}
 
+
+/*=======================================================
 	
-/*************************  footer   ***********************/
-/*mobile screen*/
+						FOOTER mobile screen
+	
+========================================================*/
+
 
 .main-footer {
 	display: none;
@@ -216,7 +208,11 @@ nav, ul, li, a{
 	width: 100%;
 }
 
-/********************** clear fix*********************/
+/*=======================================================
+	
+						CLEAR FIX
+	
+========================================================*/
 .clearfix::after {
     content: "";
     display: table;
@@ -227,8 +223,11 @@ nav, ul, li, a{
 
 
 
-
-/*==========================Media  Quries ==================================== =============================================================================================================================================================*/
+/*=======================================================
+	
+			Media  Quries min-768px
+	
+========================================================*/
 
 
 @media (min-width: 768px) {
@@ -244,9 +243,15 @@ nav, ul, li, a{
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
 	float: right;
-	padding-right: 2em;
+	padding-right: 1em;
 	
 }
+/*
+	
+nav ul li a:hover {
+		background-color: transparent;
+	}
+*/
 
 .clearfix::after {
     content: "";
@@ -282,6 +287,8 @@ nav, ul, li, a{
 	font-size: 1.2em;
 	text-align: left;
 	padding-left: 0.5em;
+	margin: 0;
+	padding-top: 1em;
 }
 	
 	
@@ -289,17 +296,13 @@ h3{
 	display: block;
 	padding: 0;
 	padding: 0;
-	
-}	
+}
 	
          /*       delete later if not required*/
 .paragraph {
 	display: inline-block;
 	max-width: 75%;				
 	padding-bottom: 2.5em;
-	
-	
-
 }
 	
 	
@@ -308,25 +311,35 @@ h3{
 	padding-top: 2em;
 	
 }
+/*=======================================================
+	
+						Navigation
+	
+========================================================*/
 
-/*******************   Navigation       ***********************/
 	
 .main-nav {
 	width: 100%;
 	text-align: center;
+	display: inline;
 }
-/*
+	
+li a:hover {
+    background-color: lightblue;
+}	
 	
 .main-nav, li {
 	display: inline-block;
 	margin-right: 30px;
-	float: right;
 	padding-top: 2px;
 	text-align: center;
 }
-*/
 
-/************************	footer nav   **********************************/
+/*=======================================================
+	
+					Footer Nav
+	
+========================================================*/
 	
 .main-footer{
 	display: block;
@@ -336,23 +349,17 @@ h3{
 .backtotop-footer{
 	display: none;
 		
-	}
+}
 	
+/*=======================================================
 	
+				Media  Quries 1025px
 	
-	
-	
-/*==========================Media  Quries ==================================== =============================================================================================================================================================*/	
-	
-	
-	
+========================================================*/	
 @media (min-width: 1025px) {
 .container {
     width: 100%;
-   
-        
 }
-
 
 .page-image1{
 	display: inline;
@@ -360,10 +367,16 @@ h3{
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
 	float: right;
-	padding-right: 2em;
+	padding-right: 1em;
 	
 }
 
+.main-nav, li {
+	display: inline-block;
+	margin-right: 30px;
+	padding-top: 2px;
+	float: right;
+}
 	
 .page-image {
 	max-width: 90%;
@@ -375,11 +388,7 @@ h3{
 	
 }
 	
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}		
+		
 .col{
 	background-color:yellow;
 	width: 30.33%;
@@ -419,52 +428,14 @@ h3{
 	
 }
 	
-	
-
 .name {
 	padding-top: 2em;
 	
 }
-
-	
-	
-
-	
-	
 	
 .container {
 	padding-bottom: 2.5em
 
 	}
-	
-	
 }  /*Do not delete this */
 	
-/*
-nav, ul, li, a{
-	padding: 10px;
-	text-align: center;
-}
-.col    {
-    width: 30%;
-}
-
-	
-div .container .clearfix
-	{
-	margin: 0;
-/*	margin-right: 0;*/
-	
-	
-
-	
-	
-/*
-div .container {
-	width: 100%;
-	margin: 0 2em;
-	margin-right: 2em;
-	padding: 0 5em;
-	}		
-*/
-*/
