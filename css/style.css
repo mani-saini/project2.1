@@ -30,10 +30,13 @@ p {
  	font-family: 'Amiri', serif;
 }
 
+/*
 .background2 {
 	width: 100%;
 	margin: 0 auto;
+	padding: 0;
 }
+*/
 
 .container {
     
@@ -43,8 +46,9 @@ p {
 }
 
 
+
 .background2 {
-	padding: 0 5em;
+	padding: 0 em;
 }
 
 
@@ -59,7 +63,7 @@ h1 {
 
 .page-image1{
 	display: block;
-	max-width: 80%;
+	max-width: 50%;
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
 }
@@ -68,7 +72,7 @@ h1 {
 	display: inline-block; /* inline-block mobile important*/
 	max-width: 80%;
 	min-width: 30%;
-	padding: 0 auto;
+	padding: 0;
 	margin-left: 0.5em;
 	padding-top: 1em;
 }
@@ -109,7 +113,7 @@ ul {
 
 nav ul li a {
 	display: block;
-	weight: bold;
+	font-weight: bold;
 	padding-top: 7px;
 }
 
@@ -147,24 +151,24 @@ li a:hover {
 
 .col{
 	background-color:yellow;
-	width: 100%;
+	
 	padding: 0;
 	margin: 0;
 }
 
-.background2{
+.background2 {
 	background-color: green;
-	padding-left: 0 2em;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	padding-bottom: 30px;
+	padding-bottom: 3em;
+	padding-right: -3em;
+	display: inline-block;
 }
 
 .container{
-	padding: 0 2%;
+	padding: 0;
 	margin: 0;
 	background-color: red;
+	width: 100%;
+	display: block;
 }
 
 .title {
@@ -236,6 +240,12 @@ li a:hover {
     max-width: 100%;
     margin: 0 auto;
 }
+	
+/*
+	.col{
+		width: 50%;
+	}
+*/
 
 .page-image1{
 	display: block;
@@ -267,45 +277,13 @@ nav ul li a:hover {
 	margin: 2.5px;
 	
 }
-	
-.col{
-	background-color:yellow;
-	width: 50%;
-	padding: 0 1px;
-	
-	}
- 
-.col{
-	max-width: 75%;
-	float: left;
-}
-	
-	
-.infor {
-	max-width: 47%;
-	float: left;
-	font-size: 1.2em;
-	text-align: left;
-	padding-left: 0.5em;
-	margin: 0;
-	padding-top: 1em;
-}
-	
-	
-h3{
-	display: block;
-	padding: 0;
-	padding: 0;
-}
-	
-         /*       delete later if not required*/
-.paragraph {
+div .col {
 	display: inline-block;
-	max-width: 75%;				
-	padding-bottom: 2.5em;
-}
-	
-	
+	}
+
+.name1-footer {
+	display: none;
+}	
 
 .name {
 	padding-top: 2em;
@@ -351,6 +329,7 @@ li a:hover {
 		
 }
 	
+}
 /*=======================================================
 	
 				Media  Quries 1025px
@@ -377,34 +356,45 @@ li a:hover {
 	padding-top: 2px;
 	float: right;
 }
+
+.name-footer1 {
+	display: none;
+}
 	
 .page-image {
 	max-width: 90%;
 	padding-top: 2.5em;
 	padding-bottom: 0.2em;
-	vertical-align: bottom;
-	margin: 2.5px;
+	vertical-align: text-top;
+/*	margin: 2.5px;*/
 	padding-top: 2em;
 	
 }
+div .col {
+	display: inline-block
+	padding: 0;
+	margin: 0;
 	
+	
+	}
 		
 .col{
 	background-color:yellow;
 	width: 30.33%;
-	padding: 0 ;
-	padding: 0 -5px;
-	margin: 0 1px;
+	max-width: 100%;
+	padding: 0;
+/*	padding: 0 100px;*/
+/*	margin: 0 -50px;*/
 	}
- 
-.col{
-	max-width: 75%;
-	float: left;
-}
-	
+
+	.col {
+		max-width: 80%;
+		padding-left: 5em;
+		
+	}
 	
 .infor {
-	max-width: 47%;
+	max-width: 75%;
 	float: left;
 	font-size: 1.2em;
 	text-align: left;
@@ -416,26 +406,19 @@ h3{
 	display: block;
 	padding: 0;
 	padding: 0;
-	
 }	
-	
-         /*       delete later if not required*/
-.paragraph {
-	display: inline-block;
-	max-width: 80%;
-	padding: 0;
-	margin: 0;
-	
-}
-	
+
 .name {
 	padding-top: 2em;
 	
 }
-	
-.container {
-	padding-bottom: 2.5em
 
-	}
-}  /*Do not delete this */
+
+.paragraph {
+	display: inline-block;
+	max-width: 96%;
+	padding: 0;
+	margin: 0;
 	
+	}
+}
