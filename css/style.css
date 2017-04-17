@@ -1,4 +1,4 @@
-      
+
 
 
 /*=======================================================
@@ -19,7 +19,7 @@ body {
 }
 
 h2 {
-    margin-top: 0; /*The stop the heading collasing */
+    margin-top: 0; /* Stop the heading collasing */
 }
 
 h2,h3,h4, a { 
@@ -30,19 +30,16 @@ p {
  	font-family: 'Amiri', serif;
 }
 
-/*
 .background2 {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
-*/
 
 .container {
     
     width: 100%;
     margin: 0 auto;
-	padding-left: 6em;
 }
 
 
@@ -70,7 +67,7 @@ h1 {
 
 .page-image{
 	display: inline-block; /* inline-block mobile important*/
-	max-width: 80%;
+	max-width: 86%;
 	min-width: 30%;
 	padding: 0;
 	margin-left: 0.5em;
@@ -78,7 +75,7 @@ h1 {
 }
 .paragraph {
 	max-width: 100%;
-	padding: 0.9em ;
+/*	padding: 0.9em ;*/
 	margin: 0 2.5em;
 }
 
@@ -86,7 +83,7 @@ h1 {
 	max-width: 100%;
 /*	float: left;*/
 	font-size: 1.1em;
-	margin: 0 8px;
+/*	margin: 0 8px;*/
 	
 	
 }
@@ -133,6 +130,8 @@ li a:hover {
 ========================================================*/
 
 
+
+
 .contact-infor{
 	background-color: lightgray;
 	padding-top: 1em;
@@ -144,15 +143,13 @@ li a:hover {
 	padding-top: 2em;
 }
 
-.border{
-	background-color: lightgray; 
-	border: solid 1px gray;
-}
+
 
 .col{
 	background-color:yellow;
 	
-	padding: 0;
+	padding-top: 2em; 0;
+	padding-bottom: 1.7em;
 	margin: 0;
 }
 
@@ -160,7 +157,8 @@ li a:hover {
 	background-color: green;
 	padding-bottom: 3em;
 	padding-right: -3em;
-	display: inline-block;
+	
+	
 }
 
 .container{
@@ -172,16 +170,16 @@ li a:hover {
 }
 
 .title {
-		padding: 20px 5px;
+		padding: 40px;
+		
 	}
-
+*/
 
 /*=======================================================
 	
 						FOOTER mobile screen
 	
 ========================================================*/
-
 
 .main-footer {
 	display: none;
@@ -232,36 +230,28 @@ li a:hover {
 			Media  Quries min-768px
 	
 ========================================================*/
-
-
 @media (min-width: 768px) {
     
  .container {           
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 	
-/*
 	.col{
-		width: 50%;
+		width: 49%;
+		margin: -7px;
 	}
-*/
 
 .page-image1{
 	display: block;
 	max-width: 100%;
 	padding: 0;
-	margin: 1em auto;   /* profile image     */
+	margin: 1em auto;   profile image     
 	float: right;
 	padding-right: 1em;
 	
 }
-/*
-	
-nav ul li a:hover {
-		background-color: transparent;
-	}
-*/
+
 
 .clearfix::after {
     content: "";
@@ -287,8 +277,30 @@ div .col {
 
 .name {
 	padding-top: 2em;
-	
+
+
+
+	}
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+
 /*=======================================================
 	
 						Navigation
@@ -296,22 +308,28 @@ div .col {
 ========================================================*/
 
 	
+/*
 .main-nav {
 	width: 100%;
 	text-align: center;
 	display: inline;
 }
 	
+*/
+/*
 li a:hover {
     background-color: lightblue;
 }	
+*/
 	
+/*
 .main-nav, li {
 	display: inline-block;
 	margin-right: 30px;
 	padding-top: 2px;
 	text-align: center;
 }
+*/
 
 /*=======================================================
 	
@@ -319,6 +337,7 @@ li a:hover {
 	
 ========================================================*/
 	
+/*
 .main-footer{
 	display: block;
 	float: right;
@@ -329,7 +348,8 @@ li a:hover {
 		
 }
 	
-}
+*/
+
 /*=======================================================
 	
 				Media  Quries 1025px
@@ -340,9 +360,35 @@ li a:hover {
     width: 100%;
 }
 
+.col{
+/*
+		width: 49%;
+		margin: -7px;*/
+}	
+
+
+.col{
+	background-color:yellow;
+	width: 33.1%;
+/*	margin: -20px;*/
+	max-width: 100%;
+	padding: 0;
+
+}
+
+
+/*
+
+div .col {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+*/
+	
 .page-image1{
 	display: inline;
-	max-width: 100%;
+	max-width: 85%;
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
 	float: right;
@@ -370,28 +416,7 @@ li a:hover {
 	padding-top: 2em;
 	
 }
-div .col {
-	display: inline-block
-	padding: 0;
-	margin: 0;
 	
-	
-	}
-		
-.col{
-	background-color:yellow;
-	width: 30.33%;
-	max-width: 100%;
-	padding: 0;
-/*	padding: 0 100px;*/
-/*	margin: 0 -50px;*/
-	}
-
-	.col {
-		max-width: 80%;
-		padding-left: 5em;
-		
-	}
 	
 .infor {
 	max-width: 75%;
@@ -415,10 +440,77 @@ h3{
 
 
 .paragraph {
-	display: inline-block;
+	display: block;
 	max-width: 96%;
-	padding: 0;
-	margin: 0;
+	padding-top: 10px;
+	margin: 1em;
 	
 	}
+
+.five {
+      clear: none;
+  }
+
+  .four {
+        clear: left;
+    }	
 }
+
+/*
+
+
+
+
+
+
+@media (min-width: 768px) {
+    
+ .container {           
+    width: 100%;
+    margin: 0;
+}
+	
+	.col{
+		width: 49%;
+		margin: -7px;
+	}
+
+.page-image1{
+	display: block;
+	max-width: 100%;
+	padding: 0;
+	margin: 1em auto;   profile image     
+	float: right;
+	padding-right: 1em;
+	
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+.page-image {
+	max-width: 90%;
+	padding-top: 8px;
+	padding-bottom: 0.2em;
+	vertical-align: bottom;
+	margin: 2.5px;
+	
+}
+div .col {
+	display: inline-block;
+	}
+
+.name1-footer {
+	display: none;
+}	
+
+.name {
+	padding-top: 2em;
+
+
+
+*/
