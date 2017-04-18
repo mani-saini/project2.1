@@ -1,34 +1,63 @@
-
-
-
 /*=======================================================
 	
-				BASE LAYOUT STYLE
+				BASE LAYOUT STYLE           315px
 	
 ========================================================*/
 * {
-    
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
+
 body {
-    
     line-height: 1.4em;
     margin-top: 0;
 	text-align: center;
+	background-color: #dadada;
 }
+
 
 h2 {
     margin-top: 0; /* Stop the heading collasing */
 }
 
+
 h2,h3,h4, a { 
 	font-family: 'Philosopher', sans-serif;     
 }
 
+
 p {
  	font-family: 'Amiri', serif;
+	
 }
+
+
+h1 {
+    padding-left:  1em;
+}
+
+
+.paragraph {
+	max-width: 100%;
+/*	padding: 0.9em ;*/
+	margin: 0 2.5em;
+	font-size: 1.1em;
+}
+
+
+.infor {
+	max-width: 100%;
+/*	float: left;*/
+	font-size: 1.1em;
+/*	margin: 0 8px;*/
+}
+
+
+/*=======================================================
+
+				CONTAINERS         315px
+	
+========================================================*/
 
 .background2 {
 	width: 100%;
@@ -43,29 +72,49 @@ p {
 }
 
 
-
 .background2 {
 	padding: 0 em;
 }
 
-
-h1 {
-    padding-left:  1em;
+.col{
+	background-color: #fff;
+	padding-top: 2em; 0;
+	padding-bottom: 1.7em;
+	margin: 0;
 }
 
 
-.main-header{
-	background-color: lightgray;
+.background2 {
+	display: inherit;
+	background-color: #dadada;
+/*	padding-bottom: 2em;*/
+/*	padding-right: -3em;*/
 }
 
-.page-image1{
+
+.container{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	width: 100%;
+	display: block;
+}
+
+/*=======================================================
+	
+				IMAGES          315px
+	
+========================================================*/
+
+.page-image1 {
 	display: block;
 	max-width: 50%;
 	padding: 0;
 	margin: 1em auto;   /* profile image     */
 }
 
-.page-image{
+
+.page-image {
 	display: inline-block; /* inline-block mobile important*/
 	max-width: 86%;
 	min-width: 30%;
@@ -73,40 +122,68 @@ h1 {
 	margin-left: 0.5em;
 	padding-top: 1em;
 }
-.paragraph {
-	max-width: 100%;
-/*	padding: 0.9em ;*/
-	margin: 0 2.5em;
+
+
+/*=======================================================
+	
+				CONTACT INFORMATION				315px
+	
+========================================================*/
+
+.contact-infor, h4{ 
+    margin-top: 0; /* Stop the heading collasing */
+	font-size: 0.9em;
+	padding-top: 4em;
+/*	padding-bottom: 2em;*/
 }
 
-.infor {
-	max-width: 100%;
-/*	float: left;*/
-	font-size: 1.1em;
-/*	margin: 0 8px;*/
+.contact-infor p{ 
+    margin-top: 0; /* Stop the heading collasing */
+	font-size: 1.39em;
 	
-	
+/*	width: 30%;*/
+/*	text-align: center;*/
+}
+
+
+.contact-infor{
+	width: 100%;
+}
+
+
+.contact-infor{
+	background-color: #dadada;
+	padding-top: 1em;
+}
+
+
+.contact-infor{
+	display: inline-block;
 }
 
 /*=======================================================
 	
-				LINK NONE STYLE
+				LINK NONE STYLE: 				315px
 	
 ========================================================*/
+
 
 a {
     text-decoration: none;
 }
 
+
 ul {
     list-style:  none;
 }
 
+
 /*=======================================================
 	
-					NAVIGATION
+					NAVIGATION: 				315px
 	
 ========================================================*/
+
 
 nav ul li a {
 	display: block;
@@ -114,9 +191,11 @@ nav ul li a {
 	padding-top: 7px;
 }
 
+
 nav ul li a:hover {
 	color: red ;
 }
+
 
 li a:hover {
     background-color: lightblue;
@@ -125,138 +204,138 @@ li a:hover {
 
 /*=======================================================
 	
-					STYLE
+					STYLE    				 315px
 	
 ========================================================*/
 
-
-
-
-.contact-infor{
-	background-color: lightgray;
-	padding-top: 1em;
-}
-
-
-.footer2{
-	background-color: lightgray;
-	padding-top: 2em;
-}
-
-
-
-.col{
-	background-color:yellow;
-	
-	padding-top: 2em; 0;
-	padding-bottom: 1.7em;
-	margin: 0;
-}
-
-.background2 {
-	background-color: green;
-	padding-bottom: 3em;
-	padding-right: -3em;
-	
-	
-}
-
-.container{
-	padding: 0;
-	margin: 0;
-	background-color: red;
-	width: 100%;
-	display: block;
-}
 
 .title {
 		padding: 40px;
-		
-	}
-*/
+}
+
 
 /*=======================================================
 	
-						FOOTER mobile screen
+						FOOTER mobile screen   315px
 	
 ========================================================*/
+
+/*
 
 .main-footer {
 	display: none;
 }
+*/
 
-.contact-infor{
-	display: inline-block;
+footer{
+	border-top: 1px solid black;
+	
+}	
+
+
+.footer2{
+	background-color: #dadada;
+	padding-top: 2em;
 }
 
-.name-footer,
-.backtotop-footer{
-	font-size: 1em;
-	vertical-align: text-top;
-		
+
+.main-footer {
+	display: block;
+	float: right;
 }
 
-.name-footer{
+
+.main-footer {
+	display: none;
+	float: right;
+}
+
+
+.shaf-footer{
 	float: left;
 	padding-left: 10px;
+	font-size: 1.1em;
 }
+
 
 .backtotop-footer{
 	float: right;
 	padding-right: 10px;
+	font-size: 1em;
+	vertical-align: text-top;
+	display:block;
 }
 
-.contact-infor{
-	width: 100%;
+
+.email {
+	padding-bottom: 2em;
 }
 
+
+.name1-footer{
+	display: none;
+}
+
+
+.footer-nav{
+	display: block;
+}
+
+.backtotop {
+	padding-top: 3em;
+}
 /*=======================================================
 	
-						CLEAR FIX
+						CLEARFIX       all screens size
 	
 ========================================================*/
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-    
-
-
-
 /*=======================================================
 	
-			Media  Quries min-768px
+			Media  Quries min-            768px
 	
 ========================================================*/
 @media (min-width: 768px) {
-    
+   
+
+/*=======================================================
+
+				CONTAINERS         		768px
+	
+========================================================*/
  .container {           
     width: 100%;
     margin: 0;
 }
 	
-	.col{
-		width: 49%;
-		margin: -7px;
-	}
+.col{
+	width: 49%;
+	margin: -7px;
+}
 
+
+div .col {
+	display: inline-block;
+}
+/*=======================================================
+
+				IMAGES         315px
+	
+========================================================*/	
+	
 .page-image1{
 	display: block;
 	max-width: 100%;
 	padding: 0;
-	margin: 1em auto;   profile image     
+	margin: 1em auto;       
 	float: right;
 	padding-right: 1em;
-	
-}
-
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 	
 .page-image {
@@ -265,94 +344,72 @@ li a:hover {
 	padding-bottom: 0.2em;
 	vertical-align: bottom;
 	margin: 2.5px;
-	
 }
-div .col {
-	display: inline-block;
-	}
-
-.name1-footer {
-	display: none;
-}	
-
-.name {
-	padding-top: 2em;
-
-
-
-	}
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 	
-
 /*=======================================================
 	
-						Navigation
+						Navigation   		768px
 	
 ========================================================*/
 
 	
-/*
-.main-nav {
-	width: 100%;
-	text-align: center;
-	display: inline;
-}
-	
-*/
-/*
 li a:hover {
-    background-color: lightblue;
+    background-color: aliceblue;
 }	
-*/
 	
-/*
+	
 .main-nav, li {
 	display: inline-block;
 	margin-right: 30px;
 	padding-top: 2px;
 	text-align: center;
 }
-*/
 
 /*=======================================================
 	
-					Footer Nav
+					Footer Nav   			  768px
 	
 ========================================================*/
+.main-footer {
+	display: inline;
+	float: right;
+	font-size: 1.2em;
+	padding-top: 2em;
+}
+
+.shaf-footer{
+	padding-top: 2em;	
+}	
 	
-/*
-.main-footer{
+		
+.footer-nav{
 	display: block;
 	float: right;
-}	
+}
 
-.backtotop-footer{
+	
+.name1-footer {
 	display: none;
-		
 }
 	
-*/
+	
+.backtotop-footer {
+	display: none;
+}
 
+.shaf-footer{ 
+    margin-bottom: 0.5em; /* Stop the heading collasing */
+}
+
+
+.name {
+	padding-top: 2em;
+}
+	
 /*=======================================================
 	
-				Media  Quries 1025px
+				Media  Quries: 					1025px
 	
 ========================================================*/	
 @media (min-width: 1025px) {
@@ -360,83 +417,93 @@ li a:hover {
     width: 100%;
 }
 
+/*=======================================================
+	
+					CONTINER   			  1025px
+	
+========================================================*/
+	
 .col{
-/*
-		width: 49%;
-		margin: -7px;*/
-}	
-
-
-.col{
-	background-color:yellow;
+	background-color: #fff;
 	width: 33.1%;
-/*	margin: -20px;*/
 	max-width: 100%;
 	padding: 0;
-
 }
-
-
-/*
-
-div .col {
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-}
-*/
 	
-.page-image1{
-	display: inline;
-	max-width: 85%;
+
+	
+/*=======================================================
+	
+					IMAGE 			  1025px
+	
+========================================================*/
+.page-image1 {
+	display: block;
+	max-width: 100%;
 	padding: 0;
-	margin: 1em auto;   /* profile image     */
+	margin: 1em auto;       
 	float: right;
 	padding-right: 1em;
-	
 }
 
-.main-nav, li {
-	display: inline-block;
-	margin-right: 30px;
-	padding-top: 2px;
-	float: right;
-}
 
-.name-footer1 {
-	display: none;
-}
-	
 .page-image {
 	max-width: 90%;
 	padding-top: 2.5em;
 	padding-bottom: 0.2em;
 	vertical-align: text-top;
-/*	margin: 2.5px;*/
 	padding-top: 2em;
-	
 }
 	
-	
-.infor {
-	max-width: 75%;
-	float: left;
-	font-size: 1.2em;
-	text-align: left;
-	padding-left: 0.5em;
-}
-	
-	
-h3{
-	display: block;
-	padding: 0;
-	padding: 0;
-}	
 
+/*=======================================================
+	
+					NAVIGATION			  1025px
+	
+========================================================*/
+.main-nav {
+	display: inline;
+/*	margin-right: 30px;*/
+	padding-top: 2px;
+	text-align: right;
+	padding-left: 2em;
+}
+
+	
+	
+/*=======================================================
+	
+					FOOTER 			  1025px
+	
+========================================================*/	
+.name-footer1 {
+	display: none;
+}
+	
 .name {
 	padding-top: 2em;
+}	
 	
+.infor {
+	max-width: 49%;
+	float: left;
+	font-size: 1.7em;
+	text-align: left;
+	padding-left: 1.5em;
 }
+
+.name{
+	display: block;
+	float: left;
+	padding: 0;
+}
+
+
+/*=======================================================
+	
+					OTHER INFOR		  1025px
+	
+========================================================*/	
 
 
 .paragraph {
@@ -444,73 +511,26 @@ h3{
 	max-width: 96%;
 	padding-top: 10px;
 	margin: 1em;
+}
 	
-	}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+	
+/*=======================================================
+	
+					CLEARFIX		  1025px
+	
+========================================================*/	
 
 .five {
       clear: none;
   }
 
-  .four {
-        clear: left;
-    }	
-}
-
-/*
-
-
-
-
-
-
-@media (min-width: 768px) {
-    
- .container {           
-    width: 100%;
-    margin: 0;
+ .four {
+       clear: left;
+   }	
 }
 	
-	.col{
-		width: 49%;
-		margin: -7px;
-	}
-
-.page-image1{
-	display: block;
-	max-width: 100%;
-	padding: 0;
-	margin: 1em auto;   profile image     
-	float: right;
-	padding-right: 1em;
-	
-}
-
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-	
-.page-image {
-	max-width: 90%;
-	padding-top: 8px;
-	padding-bottom: 0.2em;
-	vertical-align: bottom;
-	margin: 2.5px;
-	
-}
-div .col {
-	display: inline-block;
-	}
-
-.name1-footer {
-	display: none;
-}	
-
-.name {
-	padding-top: 2em;
-
-
-
-*/
